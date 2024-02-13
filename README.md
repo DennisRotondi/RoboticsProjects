@@ -1,7 +1,8 @@
 # Robotics Projects Showcase
 The purpose of this repository is to highlight my proficiency and expertise in robotics by compiling some of my finest projects in the field. \
-The following projects are the work of Dennis Rotondi, and in some cases, involve collaborative efforts. \
-You can check the project repository for individual contributions.
+The following projects are the work of Dennis Rotondi, and in some cases, involve collaborative efforts. \ 
+You can check the specific repository for individual contributions. \
+In summary, those projects enabled me to explore various areas of robotics, including pure control theory [1, 2] and the implementation of probabilistic algorithms [3, 7]. The projects where I had the most fun are [4, 5], where I had the opportunity to work with my closest friends in France and people from all around the world, met in the beautiful Japan.
 
 ## 1) Model-free Control Barrier Functions for obstacle avoidance
 
@@ -57,7 +58,7 @@ This project is the solution proposed by the Italian team to compete against all
 
 ### Description
 
-This project is the outcome of the [Tohoku University Engineering Summer Program (TESP) Robotics](http://www.astro.mech.tohoku.ac.jp/TESP/) Robotics 2023 under the supervision of Professor [Kazuya Yoshida](https://www.eng.tohoku.ac.jp/driving_force/english/vol1-1.html). The primary objective was to develop a rover-like robot from scratch with mobility in sandy environments, capable of teleoperation with an obstacle avoidance module. 
+This project is the outcome of the [Tohoku University Engineering Summer Program (TESP)](http://www.astro.mech.tohoku.ac.jp/TESP/) Robotics 2023 under the supervision of Professor [Kazuya Yoshida](https://www.eng.tohoku.ac.jp/driving_force/english/vol1-1.html). The primary objective was to develop a rover-like robot from scratch with mobility in sandy environments, capable of teleoperation with an obstacle avoidance module. 
 A Raspberry Pi 4 served as the main computer, running ROS on Ubuntu 20.04 and connecting to the LEGO Mindstorms EV3 to drive the servo motors installed in the LEGO structure
 As a depth sensor, an Intel RealSense Depth Camera D435 was employed. The robot incorporates a YOLO v7-tiny architecture for identifying obstacles and implementing avoidance strategies.
 
