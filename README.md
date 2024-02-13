@@ -48,6 +48,40 @@ This project is the result of the final work for the exam of [Probabilistic Robo
 
 This project is the solution proposed by the Italian team to compete against all the other countries in the RoboCup Autonomous Robot Manipulation Challenge 2023 world finals in Bordeaux, France. Participants were tasked with completing a recycling task with a robot manipulator in a dynamic environment. Our approach involves perception neural networks (YOLO) to identify the objects in the environment. The bounding boxes are then reprojected into the 3D world, and through 3D point matching techniques (iterative Closest Point algorithm), we estimated the positions of the objects to compute the optimal grasping direction. The robot has been moved by an impedance controller to guarantee safety. The challenge code has been extended and adapted with an interactive unconstrained language module to be considered as the final project for the exam of [Human-Robot Interaction](https://sites.google.com/a/dis.uniroma1.it/human-robot-interaction/) SS 2022/2023, taught by Professor [Luca Iocchi](https://sites.google.com/a/dis.uniroma1.it/iocchi/home) at Sapienza University of Rome.
 
+## The Lego Lunar Rover
+
+- **Repository:** [GitHub Link](https://github.com/DennisRotondi/TESP-2023-SRL)
+- **Year:** 2023
+- **Programming Language:** Python, JavaScript
+- **Additional Resources:** [Slides](https://docs.google.com/presentation/d/1brLksOLnWhpN5oyCPqFwvuAbko7c9YVF80kQ7MEr1qA/edit?usp=sharing), [Video](https://drive.google.com/file/d/1Q4VsljjR6gzpzra17ERn7jukDuctEdYL/view?usp=sharing)
+
+### Description
+
+This project is the outcome of the [Tohoku University Engineering Summer Program (TESP) Robotics](http://www.astro.mech.tohoku.ac.jp/TESP/) Robotics 2023. The primary objective was to develop a rover-like robot from scratch with mobility in sandy environments, capable of teleoperation with an obstacle avoidance module. 
+A Raspberry Pi 4 served as the main computer, running ROS on Ubuntu 20.04 and connecting to the LEGO Mindstorms EV3 to drive the servo motors installed in the LEGO structure
+As a depth sensor, an Intel RealSense Depth Camera D435 was employed. The robot incorporates a YOLO v7-tiny architecture for identifying obstacles and implementing avoidance strategies.
+
+## Web-Based Client for Pick and Delivery Robotics Tasks
+
+- **Repository:** [GitHub Link](https://github.com/DennisRotondi/progetto_labiagi)
+- **Year:** 2021
+- **Programming Language:** C++, JavaScript
+- **Additional Resources:** [Video](https://www.youtube.com/watch?v=a57-CVdI46s)
+
+### Description
+
+The result achieved with the code written in this repository is the ability to configure a client interface to notify the robot of new objectives, causing it to move in a pre-set navigation environment. From the web interface, anyone can "log in" (specifically, an ID sender is created, which will then be used on the server side in cpp to determine who can actually maneuver the robot and who can only confirm deliveries). At this point, the file is uploaded in the format {"room1": [x1, y1, theta1], ...}, which will constitute objectives on the map. The server communicates with the client through the exchange of ROS messages, using roslibjs + rosbridge; this is the natural approach to the problem. The robot distinguishes commands from "authorized" users and "guests"; the latter can only confirm arrival, and once they do, the robot will be available again to receive direction commands from authorized users. If a user of this type confirms arrival, the next position command can only be given by that user, allowing them enough time to pick up the package and potentially put another one on top. In conclusion, the program is suitable for use on any map and by multiple users, leaving the management of connections to the aforementioned libraries.
+
+## Laser Matcher
+
+- **Repository:** [GitHub Link](https://github.com/DennisRotondi/rp_project)
+- **Year:** 2021
+- **Programming Language:** C++
+
+### Description
+
+The node subscribe to "/base_scan" and from it, starting from the known position of the robot, it will use LaserScan messages obtained by this subscription to correct the position odom->base_link given by the node that deals with at low encoder level. So the result is an updated map->odom tf and the estimated pose2D advertised in the ros environment. I managed to complete the project extending the professor ICP class to have an object laser_matcher of the class LASERM which stores, besides the standard variables to have the algorithms work, all the useful information to always have an updated map->base_link transformation that allows to easily compute the required tf.
+
 
 
 
