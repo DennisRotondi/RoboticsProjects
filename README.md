@@ -83,7 +83,7 @@ It allows to configure a client interface to notify the robot of new objectives,
 ### Description
 
 This project is the result of the final work for the exam of [Robot Programming](https://sites.google.com/diag.uniroma1.it/robot-programming-2023-24/home) WS 2021/22, taught by Professor [Giorgio Grisetti](https://sites.google.com/dis.uniroma1.it/grisetti/home) at Sapienza University of Rome.
-It consists of a ROS node that subscribes to "/base_scan". From there, starting with the known position of the robot, it will use LaserScan messages obtained through this subscription to correct the position of odom->base_link given by the node that deals with low-level encoders. The result is an updated map->odom tf and the estimated pose2D advertised in the ROS environment. This can be efficiently achieved by matching scans through the Iterative Closest Point (ICP) algorithm.
+It consists of a ROS node that subscribes to "/base_scan". From there, starting with the known position of the robot, it will use LaserScan messages obtained through this subscription to correct the position of odom->base_link given by the node that deals with low-level encoders. The result is an updated map->odom tf and the estimated pose2D advertised in the ROS environment. This is efficiently achieved by matching scans through the Iterative Closest Point (ICP) algorithm.
 
 
 
