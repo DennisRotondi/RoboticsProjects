@@ -1,8 +1,8 @@
 # Robotics Projects Showcase
 The purpose of this repository is to highlight my proficiency and expertise in robotics by compiling some of my finest projects in the field. \
-The following projects are the work of Dennis Rotondi, and in some cases, involve collaborative efforts. \ 
+The following projects are the work of Dennis Rotondi, and in some cases, involve collaborative efforts. \
 You can check the specific repository for individual contributions. \
-Those projects enabled me to explore various areas of robotics, including pure control theory [1, 2] and the implementation of probabilistic algorithms [3, 7]. The projects where I had the most fun are [4, 5], where I had the opportunity to work with my closest friends in France and people from all around the world, met in the beautiful Japan.
+Those projects enabled me to explore various areas of robotics, including pure control theory [1, 2] and the implementation of probabilistic algorithms [3, 7]. The projects where I had the most fun are [4, 5], here I had the opportunity to work with my closest friends in France and people from all around the world, met in the beautiful Japan.
 
 ## 1) Model-free Control Barrier Functions for obstacle avoidance
 
