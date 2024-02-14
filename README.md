@@ -4,6 +4,10 @@ The following projects are the work of Dennis Rotondi, and in some cases, involv
 You can check the specific repository for individual contributions. \
 Those projects enabled me to explore various areas of robotics, including pure control theory [1, 2] and the implementation of probabilistic algorithms [3, 7]. The projects where I had the most fun are [4, 5], here I had the opportunity to work with my closest friends in France and people from all around the world, met in the beautiful Japan.
 
+The aim of this repository is to highlight my proficiency and expertise in robotics by compiling some of my most notable projects in the field. \
+The following projects represent my own work and, in some cases, involve collaborative efforts. For detailed insights into individual contributions, please refer to the specific repository. \
+These projects have allowed me to delve into various aspects of robotics, encompassing pure control theory [1, 2] and the application of probabilistic algorithms [3, 7]. Among these endeavors, the ones I found most enjoyable were [4, 5], where I had the pleasure of collaborating with close friends in France and individuals from diverse backgrounds whom I met during my time in beautiful Japan.
+
 ## 1) Model-free Control Barrier Functions for obstacle avoidance
 
 - **Repository:** [GitHub Link](https://github.com/DennisRotondi/AMR22_FP8_Model_free_CBF)
